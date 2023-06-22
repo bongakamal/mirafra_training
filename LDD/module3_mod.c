@@ -1,12 +1,12 @@
 #include<linux/init.h>
 #include<linux/module.h>
 #include<linux/kernel.h>
-int a=10;
-EXPORT_SYMBOL(a);
+//EXPORT_SYMBOL(a);
+extern int a;
 static int __init start(void)
 {
-	printk("init kamall.....,a");
-//	printk("in init %d",a);
+	printk("init REDDY.....,a");
+	printk("in init %d",a);
 	return 0;
 }
 static void __exit mexit(void)
@@ -20,5 +20,4 @@ module_exit(mexit);
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("beta");
 MODULE_DESCRIPTION("Alpha");
-
 
