@@ -1,0 +1,1 @@
+cmd_/home/km/mirafra/mirafra_training/LDD/module3.ko := ld -r -m elf_x86_64  -z max-page-size=0x200000 -z noexecstack   --build-id  -T ./scripts/module-common.lds -o /home/km/mirafra/mirafra_training/LDD/module3.ko /home/km/mirafra/mirafra_training/LDD/module3.o /home/km/mirafra/mirafra_training/LDD/module3.mod.o;  true
